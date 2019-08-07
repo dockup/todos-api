@@ -5,4 +5,4 @@ WORKDIR /todo-api
 COPY Gemfile Gemfile.lock ./
 RUN bundle install
 ADD . /todo-api
-CMD bundle exec rake db:migrate db:seed & bundle exec rails s -p 3000 -b '0.0.0.0'
+CMD bundle exec rake db:setup & bundle exec rails s -p 3000 -b '0.0.0.0'
