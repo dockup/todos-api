@@ -13,7 +13,11 @@ ruby -v
 ```
 POSTGRES_HOST=localhost
 POSTGRES_DB=todos
+POSTGRES_USER=postgres
+POSTGRES_PASSWORD=password
 ```
+- `POSTGRES_PORT` will always be set to `5432`
+
 Note: `development`, `test` and `production` environments use the same db. In case you need different db's, feel free to edit `config/database.yml`
 
 - `rake db:setup`
